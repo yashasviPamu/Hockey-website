@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>multiple-choice quiz form</title>
+<style>
+
+body
+{
+background-image:url("Elegant_Background-4.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:fixed;
+font-family:cursive;
+color:white;
+}
+
+label
+{
+display:block;
+}
+
+input
+{
+width:30px;
+margin-left:20px;
+}
+
+button
+{
+width:100px;
+height:30px;
+margin-top:20px;
+border-radius:20px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="main">
+<div id="header">
+<h1 style="font-family:cursive;font-size:30px;"><center>Test Your Knowledge</center></h1>
+</div>
+<form id="myform">
+<fieldset style="border:3px lightgray solid;">
+<h2>Check the answer to each multiple-choice question, and click on the "Send Form" button to submit the information.</h2>
+
+<h2>1. Which among these is the highest governing body of Hockey?<BR>
+<label for="q11"><input type="radio" name="question1" id="q11" value="25">International Hockey Federation</label>
+<label for="q12"><input type="radio" name="question1" id="q12" value="0">World Hockey Federation</label>
+<label for="q13"><input type="radio" name="question1" id="q13" value="0">Federation of International Hockey</label>
+<label for="q14"><input type="radio" name="question1" id="q14" value="0">International Hockey Association</label>
+</h2>
+
+<h2>2. Total no. of players playing on the pitch in a hockey match is?<BR>
+<label for="q21"><input type="radio" name="question2" id="q21" value="25">22</label>
+<label for="q22"><input type="radio" name="question2" id="q22" value="0">16</label>
+<label for="q23"><input type="radio" name="question2" id="q23" value="0">20</label>
+<label for="q24"><input type="radio" name="question2" id="q24" value="0">18</label>
+</h2>
+
+<h2>3. Which player is allowed to touch the ball with his feet during a Hockey match?<BR>
+<label for="q31"><input type="radio" name="question3" id="q31" value="25">Goalkeeper</label>
+<label for="q32"><input type="radio" name="question3" id="q32" value="0">Defender</label>
+<label for="q33"><input type="radio" name="question3" id="q33" value="0">Centre-forward</label>
+<label for="q34"><input type="radio" name="question3" id="q34" value="0">Winger</label>
+</h2>
+
+<h2>4. The dimensions of a Hockey field are?<BR>
+<label for="q41"><input type="radio" name="question4" id="q41" value="25">91.4m X 55m</label>
+<label for="q42"><input type="radio" name="question4" id="q42" value="0">92m X 55m</label>
+<label for="q43"><input type="radio" name="question4" id="q43" value="0">92.5m X 56m</label>
+<label for="q44"><input type="radio" name="question4" id="q44" value="0">91.4m X 56m</label>
+</h2>
+
+<h2>5. The distance between the penalty spot and the goal is?<BR>
+<label for="q51"><input type="radio" name="question5" id="q51" value="0">6yrds</label>
+<label for="q52"><input type="radio" name="question5" id="q52" value="0">5yrds</label>
+<label for="q53"><input type="radio" name="question5" id="q53" value="0">8yrds</label>
+<label for="q54"><input type="radio" name="question5" id="q54" value="25">7yrds</label>
+</h2>
+
+<h2>6. The shooting circle in a Hockey field is?<BR>
+<label for="q61"><input type="radio" name="question6" id="q61" value="25">16yrd from the baseline</label>
+<label for="q62"><input type="radio" name="question6" id="q62" value="0">18yrd from the baseline</label>
+<label for="q63"><input type="radio" name="question6" id="q63" value="0">17yrd from the baseline</label>
+<label for="q64"><input type="radio" name="question6" id="q64" value="0">15yrd from the baseline</label>
+</h2>
+
+<h2>7. The limit on numbers of substitutions per game is?<BR>
+<label for="q71"><input type="radio" name="question7" id="q71" value="0">5</label>
+<label for="q72"><input type="radio" name="question7" id="q72" value="0">7</label>
+<label for="q73"><input type="radio" name="question7" id="q73" value="0">9</label>
+<label for="q74"><input type="radio" name="question7" id="q74" value="25">No Limit</label>
+</h2>
+
+<h2>8. No. of field empires in a match is?<BR>
+<label for="q81"><input type="radio" name="question8" id="q81" value="0">1</label>
+<label for="q82"><input type="radio" name="question8" id="q82" value="25">2</label>
+<label for="q83"><input type="radio" name="question8" id="q83" value="0">3</label>
+<label for="q84"><input type="radio" name="question8" id="q84" value="0">4</label>
+</h2>
+
+<br>
+<br>
+<br>
+<br>
+<center>
+<button type="submit" value="Submit">Submit Form</button>
+</center>
+</fieldset>
+</form>
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+<script>
+
+document.getElementById("myform").onsubmit=function()
+{
+
+                  question1=parseInt(document.querySelector('input[name="question1"]:checked').value);
+
+                      question2=parseInt(document.querySelector('input[name="question2"]:checked').value);
+
+                          question3=parseInt(document.querySelector('input[name="question3"]:checked').value);
+
+                              question4=parseInt(document.querySelector('input[name="question4"]:checked').value);
+
+                                  question5=parseInt(document.querySelector('input[name="question5"]:checked').value);
+
+                                      question6=parseInt(document.querySelector('input[name="question6"]:checked').value);
+
+                                          question7=parseInt(document.querySelector('input[name="question7"]:checked').value);
+
+                                              question8=parseInt(document.querySelector('input[name="question8"]:checked').value);
+
+    result = question1 + question2 + question3 + question4 + question5 + question6 + question7 + question8;
+
+       document.getElementById("grade").innerHTML=result;
+
+grading=[
+        {score:0,feedback:"You need to learn more about the sport."},
+        {score:25,feedback:"You need to learn about the sport."},
+        {score:50,feedback:"You need to learn about the sport."},
+        {score:75,feedback:"You need to learn about the sport."},
+        {score:100,feedback:"You know about the sport."},
+        {score:125,feedback:"You know about the sport."},  
+        {score:150,feedback:"Close.Try again."},
+        {score:175,feedback:"So close.Try again."},
+        {score:200,feedback:"Excellent!You know a lot about the sport."}
+        ];
+
+for(var i=0;i<grading.length;i++)
+{
+    if(result==grading[i].score)
+    {
+      result2=grading[i].feedback;
+    }
+}
+
+document.getElementById("grade2").innerHTML=result2;
+
+return false;
+}
+</script>
+<center><img src="download.jpg" width="60" height="60"</img></center>
+</div>
+</body>
+</html>

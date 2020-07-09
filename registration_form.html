@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+
+            body{font-family:cursive; color:brown; font-size:20px; Sans-Serif;}
+            #container{width:300px; margin:0 auto;}
+
+           
+            form label{display:inline-block;color:white; width:140px;}
+
+            
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"]{width:160px;}
+
+            form.line{clear:both;}
+            form.line.submit{text-align:right;}
+body
+{
+background-image:url("697254400.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+textarea
+{
+width=100%;
+padding:10px 30px;
+border:none;
+border-radius:20px;
+background-color:lightblue;
+font-size:20px;
+font-family:cursive;
+}
+input[type=submit]
+{
+cursor:pointer;
+float:right;
+border:none
+padding:10px 70px;
+padding-right:10px;
+font-size:20px;
+font-family:cursive;
+background-color:lightblue
+}
+a
+{
+color:white;
+font-family:cursive;
+font-size:40px;
+background-color:rgba(118,24,4,0.4);
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:blue;
+}
+
+</style>
+</head>
+<body>
+<center><a href="HTML-Home page1.html"target="_blank"> Home </a>
+<a href="history.html" target="_blank"> History </a>
+<a href="project.html" target="_blank"> Profiles </a>
+<a href="registration_form.html"target="_blank">Registration </a>
+<a href="About Us.html" target="_self"> About Us </a>
+</center>
+
+        <div id="container">
+            <form name="myForm">
+                <h1>Registration Form</h1>
+                 
+                <div class="line"><label for="Name">Name *: </label><input type="text" id="Name1" name="Name" onkeydown=abc() onkeyup=def() /></div>
+                <div class="line"><label for="Surname">Surname *: </label><input type="text" id="Surnames1" name="Surnames" onkeydown=abc1() onkeyup=def1() /></div>
+                <div class="line"><label for="dob">Date of Birth :</label><input type="text" id="dob1" name="dob" onkeydown=abc2() onkeyup=def2() /></div>
+                <div class="line"><label for="email">Email *: </label><input type="email" id="email1" name="email" onkeydown=abc3() onkeyup=def3() /></div>
+                <div class="line"><label for="tel">Telephone: </label><input type="text" id="tel1" name="tel" onkeydown=abc4() onkeyup=def4() /></div>
+                <div class="line"><label for="add">Address *: </label><textarea rows="4" cols="8" placeholder="Address"/></textarea></div>
+                <div class="line"><label for="ptc">Post Code *: </label><input type="text" id="ptc1" name="ptc" onkeydown=abc5() onkeyup=def5() /></div>
+                <div class="line submit"><input type="submit" value="Submit" onclick="fun()" /></div>  <br>
+                <p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!</p>
+            </form>
+        </div>
+<script>
+
+function fun()
+{
+if(document.myForm.Name.value=="")
+{
+alert("Enter Name");
+return false;
+}
+else if(document.myForm.Surnames.value=="")
+{
+alert("Enter Surname");
+return false;
+}
+else if(document.myForm.dob.value=="")
+{
+alert("Enter Date of Birth");
+return false;
+}
+else if(document.myForm.email.value=="")
+{
+alert("Enter email");
+return false;
+}
+else if(document.myForm.ptc.value=="")
+{
+alert("Enter Postal Code");
+return false;
+}
+else
+{
+alert("Successfully recieved your registration");
+return (true);
+}
+}
+
+function abc()
+{
+document.getElementById("Name1").style.background="lightblue";
+}
+
+function def()
+{
+document.getElementById("Name1").style.background="white";
+}
+
+function abc1()
+{
+document.getElementById("Surnames1").style.background="lightblue";
+}
+
+function def1()
+{
+document.getElementById("Surnames1").style.background="white";
+}
+
+function abc2()
+{
+document.getElementById("dob1").style.background="lightblue";
+}
+
+function def2()
+{
+document.getElementById("dob1").style.background="white";
+}
+
+function abc3()
+{
+document.getElementById("email1").style.background="lightblue";
+}
+
+function def3()
+{
+document.getElementById("email1").style.background="white";
+}
+
+function abc4()
+{
+document.getElementById("tel1").style.background="lightblue";
+}
+
+function def4()
+{
+document.getElementById("tel1").style.background="white";
+}
+
+function abc5()
+{
+document.getElementById("ptc1").style.background="lightblue";
+}
+
+function def5()
+{
+document.getElementById("ptc1").style.background="white";
+}
+
+</script>
+<p><center><img src="download.jpg" width="60" height="60"</img></center></p>
+    </body>
+</html>

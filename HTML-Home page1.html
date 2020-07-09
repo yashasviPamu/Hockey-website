@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.item1
+{grid-area:head;
+font-size:40px;
+padding-bottom:200px;
+background-image:url("697254400.jpg");
+background-repeat:no-repeat;
+background-size:100%;}
+
+.item2{grid-area:left;padding:20px;}
+.item3{grid-area:main;padding:20px;}
+.item4{grid-area:right;padding:20px;}
+.item5{
+grid-area:footer;
+padding:50x;
+background-color:rgba(255,255,255, 0.7);}
+
+#image
+{
+border-radius:50%;
+}
+
+.grid-container{
+display:grid;
+grid-template-areas:
+     'head head head head head head'
+     'left left main main right right'
+ 'footer footer footer footer footer footer'
+}
+.grid-container>div{
+color:black;
+font-family:cursive;
+text-align:center;
+}
+#a1
+{
+color:lightblue;
+width:75%;
+padding:20px;
+background-color:white;
+}
+#a
+{
+color:lightblue;
+width:75%;
+padding:20px;
+background-color:white;
+}
+#a2
+{
+color:lightblue;
+width:75%;
+padding:20px;
+background-color:white;
+}
+#a3
+{
+color:lightblue;
+width:75%;
+padding:20px;
+background-color:white;
+}
+body
+{
+background:url(697254400.jpg);
+background-size:1520px;
+background-attachment:fixed;
+}
+P
+{
+font-style:italic;
+font-weight:bold;
+font-size:20px;
+color:black;
+}
+a
+{
+color:white;
+font-family:Franklin Gothic;
+font-size:40px;
+width:100px;
+background-color:rgba(118,24,4,0.4);
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:blue;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+
+<div class="item1">
+<div style1="background-color:rgba(0,0,0,0.5);margin-top:30px;padding-bottom:15px;">
+<a href="HTML-Home page1.html"target="_blank"> Home </a>
+<a href="history.html" target="_blank"> History </a>
+<a href="project.html" target="_blank"> Profiles </a>
+<a href="registration_form.html"target="_blank">Registration </a>
+<a href="About Us.html" target="_self"> About Us </a>
+
+</div>
+<center>
+<div style="border-radius:35px;margin-top:10%;font-size:50px;font-weight:bold;background:rgba(118,24,4,0.4);width:70%;">
+WELCOME GAME ADDICTS!</div> <br> <br>
+<p>Good to have you guys here! We have information on the sport "Hockey" which you probably might be searching for along with profiles of the players<br>as well as their achievements and as well we also provide the history of the sport along with some important notices about the game. Stay tuned for more updates!</p>
+<p>And you can test your knowledge on Hockey by taking the quiz provided by us in the below link.</p>
+<a href="quiz.html" style="border-radius:10px;width:100px;font-weight:bold;padding-right:60px;padding-bottom:2px;text-decoration:none;" target="_blank">Test Your Knowledge</a>
+</center>
+</div>
+
+<div class="item2">
+<center>
+<div id="a3" style="border-radius:20%;" onmouseover=abc2() onmouseout=def2() ><p>Jersey</p><br>
+<img id="image" src="jersey.jpg" width="150px" height="150px" style="border-radius:35px" ><br>
+Jersey plays an important role in<br>identifying players and acts as their identity.
+</div>
+</center>
+</div> 
+
+<div class="item3">
+<center>
+<div id="a2" style="border-radius:20%;" onmouseover=abc1() onmouseout=def1() ><p>Kneepads</p><br>
+<img id="image" src="kneepad.jpg" width="150px" height="150px" style="border-radius:35px" ><br>
+Kneepads are used to protect legs<br>while playing the game. 
+</div>
+</center>
+</div> 
+
+<div class="item4">
+<center>
+<div id="a1" style="border-radius:20%;" onmouseover=abc() onmouseout=def() ><p>Hockey stick and ball</p><br>
+<img id="image" src="images (1).jpg" width="150px" height="150px" style="border-radius:35px" ><br>
+Field Hockey sticks have an end<br>which varies in shape, often<br>depending on the players position.
+</div>
+</center>
+</div> 
+
+<div class="item5"><center>
+<div style="width:40%;font-size:30px;">Yashasvistark028@gmail.com</div></center>
+<br>
+<div style="color:761804;">999.91.05|875.19.18 <br> <br>
+We provide registration forms for joining us and helping us in updating the content.<br>Feel free to drop your feedback in the feedback page which might help us in improving our services.<br> Thank you!<br></p>
+<center><footer style="width:40%;font-size:20px;text-align:center;">Copyright &copy; Divyamgrover90@gmail.com</footer> </center>
+</center><br>
+</div><img src="download.jpg" width="60" height="60"</img>
+</div>
+<script>
+
+function abc()
+{
+document.getElementById("a1").style.color="blue";
+}
+function def()
+{
+document.getElementById("a1").style.color="lightblue";
+}
+
+function abc1()
+{
+document.getElementById("a2").style.color="blue";
+}
+function def1()
+{
+document.getElementById("a2").style.color="lightblue";
+}
+
+function abc2()
+{
+document.getElementById("a3").style.color="blue";
+}
+function def2()
+{
+document.getElementById("a3").style.color="lightblue";
+}
+</script>
+</body>
+</html>
